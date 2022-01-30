@@ -1,0 +1,59 @@
+.translation-area {
+  width: calc(50vw - 300px);
+  height: 200px;
+  overflow-y: scroll;
+  padding: 30px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 800px;
+  bottom: 100px;
+  background-color: white;
+  z-index: 1;
+}
+
+.translation-text-area {
+  margin-bottom: 30px;
+}
+
+.loading {
+  width: 100%;
+  text-align: center;
+}
+
+.translation-button {
+  width: 100px;
+  padding: 5px 15px;
+  font-size: 15px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #2ecc71;
+  color: #ecf0f1;
+
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.translation-button:hover {
+  background-color: #27ae60;
+}
+
+/* */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 50, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}

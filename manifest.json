@@ -1,0 +1,20 @@
+{
+  "name": "DeepL on Grammarly",
+  "description": "DeepL on Grammarly",
+  "version": "1.0",
+  "manifest_version": 3,
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.grammarly.com/*"],
+      "css": ["main.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
